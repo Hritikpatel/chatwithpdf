@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "chatwithpdf/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "chatwithpdf/wsgi.py"
+      }
+    ]
+}
