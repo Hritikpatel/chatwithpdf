@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure--v&uu&9ii8565o0v-)xzk^$)13+^b$l+g%sy4nu5+&&mu%o@!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'chatwithpdf.wsgi.application'
+WSGI_APPLICATION = 'chatwithpdf.wsgi.app'
 
 
 # Database
