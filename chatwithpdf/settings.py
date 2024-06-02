@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+
 import os
 from pathlib import Path
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure--v&uu&9ii8565o0v-)xzk^$)13+^b$l+g%sy4nu5+&&mu%o@!u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '*.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -69,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'chatwithpdf.wsgi.app'
+WSGI_APPLICATION = 'chatwithpdf.wsgi.application'
 
 
 # Database
